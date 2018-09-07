@@ -1,0 +1,9 @@
+<input type="text" (keyup)="onNameKeyUp($event)" />
+<button (click)="getProfile()">Get Profile</button>
+<br>
+<div *ngIf="found">
+    <span>{{name}} name's age is {{age}}</span>
+</div>
+
+----------------------
+<button (click)="postProfile()">Post Profile</button>
